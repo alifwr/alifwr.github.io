@@ -8,19 +8,19 @@ body {
 
 .jumbotron img {
   width: 200px;
-  border: 5px solid #666;
+  border: 5px solid #5B80DA;
 }
 
-/* .jumbotron h1 {
-    color: #eee;
+.jumbotron h1 {
+    color: #fff;
 }
 
-.jumbotron p {
-    color: #eee;
-} */
+.jumbotron h3 {
+    color: #fff;
+}
 
 #header {
-    background-color: #eee;
+    background-color: #2B50AA;
     /* background: url('../images/banner.jpeg') center ; */
     background-size: cover;
 }
@@ -30,12 +30,20 @@ hr {
   border-top: 5px solid #000;
 }
 
+.portfolio h2 {
+    color: #fff;
+}
+.portfolio hr {
+    width: 200px;
+    border-top: 3px solid #fff;
+}
+
 section {
     min-height: 400px;
 }
 
 .portfolio {
-    background-color: #eee;
+    background-color: #2B50AA;
 }
 
 .contact {

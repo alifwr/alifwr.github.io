@@ -24,11 +24,24 @@
     <![endif]-->
   </head>
   <body>
+    <?php
+$to      = 'nobody@example.com';
+$subject = 'the subject';
+$message = 'hello';
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+
+echo 'success';
+?>
+
     <!-- jumbotron -->
     <div class="jumbotron text-center" id="header">
       <img src="/images/me.jpeg" class="img-circle" alt="" />
       <h1>Alif Wicaksana Ramadhan</h1>
-      <p>Electronics Engineer | Firmware Engineer</p>
+      <h3>Electronics Engineer | Firmware Engineer</h3>
     </div>
     <!-- end jumbotron -->
 
@@ -135,7 +148,7 @@
         </div>
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
-            <form data-aos="zoom-in" action="">
+            <form data-aos="zoom-in" action="mail.php">
               <div class="form-group">
                 <label for="nama">Nama</label>
                 <input
@@ -177,7 +190,7 @@
                 <textarea
                   name=""
                   id=""
-                  cols="30"
+                  cols="10"
                   rows="10"
                   class="form-control"
                   placeholder="Masukkan Pesan"
@@ -197,6 +210,11 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
+            <p>
+              Email :
+              <a href="mailto:alifwr@protonmail.ch">alifwr@protonmail.ch</a> |
+              Instagram : <a href="https://instagram.com/alifwr">@alifwr</a>
+            </p>
             <p>
               &copy;copyright 2021 | built with
               <i class="glyphicon glyphicon-heart"></i> by.
