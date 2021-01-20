@@ -8,10 +8,13 @@
     <title>My Portfolio</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +25,7 @@
   </head>
   <body>
     <!-- jumbotron -->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="header">
       <img src="/images/me.jpeg" class="img-circle" alt="" />
       <h1>Alif Wicaksana Ramadhan</h1>
       <p>Electronics Engineer | Firmware Engineer</p>
@@ -33,13 +36,13 @@
     <section class="about" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div data-aos="zoom-in-up" class="col-sm-12">
             <h2 class="text-center">About</h2>
             <hr />
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-5 col-sm-offset-1">
+          <div data-aos="fade-right" class="col-sm-5 col-sm-offset-1">
             <p class="text-justify">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -53,7 +56,7 @@
               Lorem Ipsum.
             </p>
           </div>
-          <div class="col-sm-5">
+          <div data-aos="fade-left" class="col-sm-5">
             <p class="text-justify">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
@@ -78,40 +81,40 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 text-center">
+          <div data-aos="zoom-in-up" class="col-sm-12 text-center">
             <h2>Portfolio</h2>
             <hr />
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div data-aos="fade-up-right" class="col-sm-4">
             <a href="" class="thumbnail">
               <img src="./images/1.JPG" alt="" />
             </a>
           </div>
-          <div class="col-sm-4">
+          <div data-aos="fade-up" class="col-sm-4">
             <a href="" class="thumbnail">
               <img src="./images/2.jpg" alt="" />
             </a>
           </div>
-          <div class="col-sm-4">
+          <div data-aos="fade-up-left" class="col-sm-4">
             <a href="" class="thumbnail">
               <img src="./images/3.JPG" alt="" />
             </a>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div data-aos="fade-up-right" class="col-sm-4">
             <a href="" class="thumbnail">
               <img src="./images/4.png" alt="" />
             </a>
           </div>
-          <div class="col-sm-4">
+          <div data-aos="fade-up" class="col-sm-4">
             <a href="" class="thumbnail">
               <img src="./images/5.jpg" alt="" />
             </a>
           </div>
-          <div class="col-sm-4">
+          <div data-aos="fade-up-left" class="col-sm-4">
             <a href="" class="thumbnail">
               <img src="./images/bocil.jpg" alt="" />
             </a>
@@ -125,39 +128,61 @@
     <section class="contact" id="contact">
       <div class="container">
         <div class="row">
-          <div class="row-sm-12 text-center">
+          <div data-aos="zoom-in-up" class="row-sm-12 text-center">
             <h2>Contact</h2>
             <hr />
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
-            <form action="">
-
+            <form data-aos="zoom-in" action="">
               <div class="form-group">
                 <label for="nama">Nama</label>
-                <input type="text" id="nama" class="form-control" placeholder="Nama" />
+                <input
+                  type="text"
+                  id="nama"
+                  class="form-control"
+                  placeholder="Nama"
+                />
               </div>
 
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Email" />
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                />
               </div>
 
               <div class="form-group">
                 <label for="telp">No Telpon</label>
-                <input type="tel" id="telp" class="form-control" placeholder="No Telpon" />
+                <input
+                  type="tel"
+                  id="telp"
+                  class="form-control"
+                  placeholder="No Telpon"
+                />
               </div>
 
               <select name="" id="" class="form-control">
-                  <option value="">-- Pilih Kategori --</option>
-                  <option value="">Web Design</option>
-                  <option value="">Web Developer</option>
+                <option value="">-- Pilih Kategori --</option>
+                <option value="">Web Design</option>
+                <option value="">Web Developer</option>
               </select>
 
               <div class="form-group">
                 <label for="telp">No Telpon</label>
-                <textarea name="" id="" cols="30" rows="10" class="form-control">Masukkan Pesan</textarea>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                  placeholder="Masukkan Pesan"
+                >
+                </textarea>
               </div>
 
               <button class="btn btn-primary">Kirim Pesan</button>
@@ -170,13 +195,17 @@
 
     <!-- footer -->
     <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>&copy;copyright 2021 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="instagram.com/alifwr">Alif Wicaksana</a></p>
-                </div>
-            </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>
+              &copy;copyright 2021 | built with
+              <i class="glyphicon glyphicon-heart"></i> by.
+              <a href="instagram.com/alifwr">Alif Wicaksana</a>
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- end footer -->
 
@@ -192,5 +221,10 @@
       integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
       crossorigin="anonymous"
     ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
