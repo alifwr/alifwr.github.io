@@ -1,247 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>My Portfolio</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <?php
-$to      = 'nobody@example.com';
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-mail($to, $subject, $message, $headers);
-
-echo 'success';
-?>
-
-    <!-- jumbotron -->
-    <div class="jumbotron text-center" id="header">
-      <img src="/images/me.jpeg" class="img-circle" alt="" />
-      <h1>Alif Wicaksana Ramadhan</h1>
-      <h3>Electronics Engineer | Firmware Engineer</h3>
-    </div>
-    <!-- end jumbotron -->
-
-    <!-- about -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row">
-          <div data-aos="zoom-in-up" class="col-sm-12">
-            <h2 class="text-center">About</h2>
-            <hr />
-          </div>
-        </div>
-        <div class="row">
-          <div data-aos="fade-right" class="col-sm-5 col-sm-offset-1">
-            <p class="text-justify">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div data-aos="fade-left" class="col-sm-5">
-            <p class="text-justify">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-              BC. This book is a treatise on the theory of ethics, very popular
-              during the Renaissance. The first line of Lorem Ipsum, "Lorem
-              ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end about -->
-<!--
-    <!-- portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div data-aos="zoom-in-up" class="col-sm-12 text-center">
-            <h2>Portfolio</h2>
-            <hr />
-          </div>
-        </div>
-        <div class="row">
-          <div data-aos="fade-up-right" class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="./images/1.JPG" alt="" />
-            </a>
-          </div>
-          <div data-aos="fade-up" class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="./images/2.jpg" alt="" />
-            </a>
-          </div>
-          <div data-aos="fade-up-left" class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="./images/3.JPG" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div data-aos="fade-up-right" class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="./images/4.png" alt="" />
-            </a>
-          </div>
-          <div data-aos="fade-up" class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="./images/5.jpg" alt="" />
-            </a>
-          </div>
-          <div data-aos="fade-up-left" class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="./images/bocil.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end portfolio -->
--->
-    <!-- contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div data-aos="zoom-in-up" class="row-sm-12 text-center">
-            <h2>Contact</h2>
-            <hr />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <form data-aos="zoom-in" action="mail.php">
-              <div class="form-group">
-                <label for="nama">Nama</label>
-                <input
-                  type="text"
-                  id="nama"
-                  class="form-control"
-                  placeholder="Nama"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  placeholder="Email"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="telp">No Telpon</label>
-                <input
-                  type="tel"
-                  id="telp"
-                  class="form-control"
-                  placeholder="No Telpon"
-                />
-              </div>
-
-              <select name="" id="" class="form-control">
-                <option value="">-- Pilih Kategori --</option>
-                <option value="">Web Design</option>
-                <option value="">Web Developer</option>
-              </select>
-
-              <div class="form-group">
-                <label for="telp">No Telpon</label>
-                <textarea
-                  name=""
-                  id=""
-                  cols="10"
-                  rows="10"
-                  class="form-control"
-                  placeholder="Masukkan Pesan"
-                ></textarea>
-              </div>
-
-              <button class="btn btn-primary">Kirim Pesan</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end contact -->
-
-    <!-- footer -->
-    <footer>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-12">
-            <p>
-              Email :
-              <a href="mailto:alifwr@protonmail.ch">alifwr@protonmail.ch</a> |
-              Instagram : <a href="https://instagram.com/alifwr">@alifwr</a>
-            </p>
-            <p>
-              &copy;copyright 2021 | built with
-              <i class="glyphicon glyphicon-heart"></i> by.
-              <a href="instagram.com/alifwr">Alif Wicaksana</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- end footer -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-      crossorigin="anonymous"
-    ></script>
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
+<!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-feature-settings:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-16{margin-bottom:4rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-40{height:10rem}.h-8{height:2rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-40{width:10rem}.w-8{width:2rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.space-x-6>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(1.5rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(1.5rem*var(--tw-space-x-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(1rem*var(--tw-space-y-reverse));margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(1.5rem*var(--tw-space-y-reverse));margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.border-b-4{border-bottom-width:4px}.border-yellow-300{--tw-border-opacity:1;border-color:rgb(253 224 71/var(--tw-border-opacity,1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-blue-700{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:#2563eb00 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-blue-500{--tw-gradient-to:#3b82f600 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#3b82f6 var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-blue-400{--tw-gradient-to:#60a5fa var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.pb-2{padding-bottom:.5rem}.text-center{text-align:center}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-yellow-100{--tw-text-opacity:1;color:rgb(254 249 195/var(--tw-text-opacity,1))}.text-yellow-200{--tw-text-opacity:1;color:rgb(254 240 138/var(--tw-text-opacity,1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71/var(--tw-text-opacity,1))}.shadow-md{--tw-shadow:0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-md,.shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px #0000001a,0 8px 10px -6px #0000001a;--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-transform{transition-duration:.15s;transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:text-yellow-100:hover{--tw-text-opacity:1;color:rgb(254 249 195/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.focus\:outline-none:focus{outline:2px solid #0000;outline-offset:2px}@media (min-width:768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}</style>
+<style>a[data-v-fda26016]{transition:color .3s ease}a[data-v-fda26016]:hover{color:#ffeb3b}.bg-blue-600[data-v-fda26016]{background-color:#1e3a8a}.bg-blue-700[data-v-fda26016]{background-color:#1d4ed8}.bg-blue-500[data-v-fda26016]{background-color:#3b82f6}.bg-gradient-to-r[data-v-fda26016]{background-image:linear-gradient(90deg,#1e3a8a,#3b82f6,#60a5fa)}@media (max-width:768px){h1[data-v-fda26016]{font-size:3rem}h2[data-v-fda26016]{font-size:2.5rem}.max-w-5xl[data-v-fda26016]{max-width:100%}}</style>
+<style>a[data-v-a9128975]{transition:color .3s ease}a[data-v-a9128975]:hover{color:#ffeb3b}.bg-blue-600[data-v-a9128975]{background-color:#1e3a8a}.bg-blue-700[data-v-a9128975]{background-color:#1d4ed8}.bg-blue-500[data-v-a9128975]{background-color:#3b82f6}.bg-gradient-to-r[data-v-a9128975]{background-image:linear-gradient(90deg,#1e3a8a,#3b82f6,#60a5fa)}@media (max-width:768px){h1[data-v-a9128975]{font-size:3rem}h2[data-v-a9128975]{font-size:2.5rem}.max-w-5xl[data-v-a9128975]{max-width:100%}}</style>
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/_payload.json?27c4e1b6-4c52-4868-857c-9d48a27639d2">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DsoZn3bg.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/MQiM0mQy.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/TXr3DOhe.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DSqClWRU.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/CpAq0Eem.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/YdwAHqKk.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/CP0ln3qb.js">
+<script type="module" src="/_nuxt/DsoZn3bg.js" crossorigin></script></head><body><div id="__nuxt"><div class="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 min-h-screen text-white" data-v-fda26016><nav class="flex items-center justify-between p-6 max-w-7xl mx-auto" data-v-fda26016><div class="text-3xl font-bold text-yellow-300 hover:text-yellow-100 transition-transform transform hover:scale-105 cursor-pointer" data-v-fda26016>Alif Wicaksana Ramadhan</div><div data-v-fda26016><ul class="hidden md:flex space-x-6" data-v-fda26016><li data-v-fda26016><a href="#about" class="hover:text-yellow-100 transition-colors" data-v-fda26016>About</a></li><li data-v-fda26016><a href="#education" class="hover:text-yellow-100 transition-colors" data-v-fda26016>Education</a></li><li data-v-fda26016><a href="#experience" class="hover:text-yellow-100 transition-colors" data-v-fda26016>Experience</a></li><li data-v-fda26016><a href="#skills" class="hover:text-yellow-100 transition-colors" data-v-fda26016>Skills</a></li><li data-v-fda26016><a href="#projects" class="hover:text-yellow-100 transition-colors" data-v-fda26016>Projects</a></li></ul><button class="md:hidden text-yellow-300 focus:outline-none" data-v-fda26016><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-fda26016><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" data-v-fda26016></path></svg></button></div></nav><!----><header class="text-center mt-20 mb-10 px-4" data-v-fda26016><div class="w-40 h-40 mx-auto rounded-full overflow-hidden mb-6 transition-transform transform hover:scale-105" data-v-fda26016><img src="/img/me.jpg" alt="{{ jsonData.name }}" class="w-full h-full object-cover" data-v-fda26016></div><h1 class="text-5xl md:text-6xl font-extrabold text-yellow-300" data-v-fda26016>Alif Wicaksana Ramadhan</h1><p class="mt-4 text-lg md:text-xl text-gray-200" data-v-fda26016>(+62)813-6984-2186 | <a href="mailto:alifwr98@gmail.com" class="text-yellow-100 hover:underline" data-v-fda26016>alifwr98@gmail.com</a></p><p class="text-xl md:text-2xl text-yellow-200 mt-2" data-v-fda26016>Robotics Developer &amp; Machine Learning Enthusiast</p></header><!--[--><div class="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 min-h-screen text-white" data-v-a9128975><section id="about" class="text-center mb-16 max-w-4xl mx-auto px-4" data-v-a9128975><p class="text-lg md:text-2xl text-gray-200" data-v-a9128975>Welcome to my personal page. I am passionate about robotics, artificial intelligence, and creating futuristic solutions. I bring dedication, skill, and enthusiasm to every project I undertake, pushing the boundaries of technology.</p></section><section id="education" class="bg-blue-600 text-white rounded-lg shadow-xl p-8 max-w-5xl mx-auto mb-16 px-4" data-v-a9128975><h2 class="text-3xl md:text-4xl font-bold border-b-4 border-yellow-300 pb-2 mb-6 text-center" data-v-a9128975>Education</h2><ul class="space-y-4" data-v-a9128975><!--[--><li data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Politeknik Elektronika Negeri Surabaya</strong> - Bachelor in Electronics Engineering (2016 - 2020) </li><li data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Politeknik Elektronika Negeri Surabaya</strong> - Master in Electrical Engineering (2021 - 2023) </li><!--]--></ul></section><section id="experience" class="bg-blue-600 text-white rounded-lg shadow-xl p-8 max-w-5xl mx-auto mb-16 px-4" data-v-a9128975><h2 class="text-3xl md:text-4xl font-bold border-b-4 border-yellow-300 pb-2 mb-6 text-center" data-v-a9128975>Experiences</h2><ul class="space-y-6" data-v-a9128975><!--[--><li data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Professor Assistant</strong> - Intelligent Robot System Laboratory (IRoS), University of Indonesia (Feb 2024 - Now) </li><li data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Software Developer</strong> - PT. Fiesto Surabaya (Aug 2023 - Jan 2024) </li><li data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Software Developer (Remote)</strong> - PT. Santai Berkualitas Syberindo (Sep 2022 - Mar 2023) </li><li data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Machine Learning Developer (Freelance)</strong> - Self Freelance (Nov 2020 - Now) </li><li data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Software Developer (Freelance)</strong> - Self Freelance (Nov 2020 - Now) </li><!--]--></ul></section><section id="skills" class="bg-blue-600 text-white rounded-lg shadow-xl p-8 max-w-5xl mx-auto mb-16 px-4" data-v-a9128975><h2 class="text-3xl md:text-4xl font-bold border-b-4 border-yellow-300 pb-2 mb-6 text-center" data-v-a9128975>Technical Skills</h2><ul class="grid grid-cols-1 md:grid-cols-2 gap-6" data-v-a9128975><!--[--><li class="bg-blue-500 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105" data-v-a9128975>Programming: C, C++, Python, Javascript, Rust</li><li class="bg-blue-500 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105" data-v-a9128975>Professional Software: Linux, ROS, PyTorch, Tensorflow, OpenCV, Flask, FastAPI, Git, Docker, CI/CD</li><li class="bg-blue-500 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105" data-v-a9128975>Embedded System: STM32, ESP32, AVR, Arduino, PCB Design (Eagle)</li><li class="bg-blue-500 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105" data-v-a9128975>Languages: Indonesian, English (IELTS 6.5), Japanese (N4 simulation)</li><!--]--></ul></section><section id="projects" class="bg-blue-600 text-white rounded-lg shadow-xl p-8 max-w-5xl mx-auto mb-16 px-4" data-v-a9128975><h2 class="text-3xl md:text-4xl font-bold border-b-4 border-yellow-300 pb-2 mb-6 text-center" data-v-a9128975>Projects</h2><ul class="space-y-6" data-v-a9128975><!--[--><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Deep Learning Based Signal Denoising</strong> - Research Assistant (Sep 2024 - Now) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>In this project, I developed a deep learning model to denoise ECG signals, improving the clarity and accuracy of these signals for medical analysis. The model combined Transformer and Convolutional Neural Network (CNN) architectures to leverage the strengths of both. The Transformer component was used to capture long-range dependencies and temporal relationships within the ECG signal, while the CNN layers were employed to extract local patterns and features effectively. The integration of these two models allowed for superior noise reduction,
+particularly in handling complex and non-linear noise present in real-world ECG data. The denoising process significantly enhanced signal quality, making it easier to identify key features such as heart rate variability and detecting abnormal rhythms.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Object Tracking using DeepSORT with Infrared Image Fusion</strong> - Research Assistant (Jul 2024 - Sep 2024) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>An object tracking for robust human tracking application. The system fused the rgb image data with infrared image data to gain more robust object detection within the various lighting conditions. A kalman filter used to estimate the next position of the tracked human, and estimate the current position of a human that not detected in current frame. A deep learning model for appearance feature extraction was utilized. These appearance feature then used to associate a list of human in the previous frame with the current frame.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Biometric Security System using Deep Learning</strong> - Research Assistant (Apr 2024 - Jun 2024) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>A web application with bio-metric security applied. In this work, a user who login needs to capture their face. The face image is then fed into the Siamese network to classify whether the person is the same as the login data and whether the image is live or fake. The Siamese network used InceptionNet as the feature extraction layer to generate embedding. Before the bio-metric verification process, the user faces should registered. The registration was done by storing the embedding values in a vector database named QdrantDB. The face image was given to the feature extraction layer in the verification process, resulting in the embedding values. Then, the system searches for the nearest similarity with stored embedding within the database. If the resulting embedding is identical to the login data from the user, then the user is verified to log in.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Omni-wheel Mobile Robot Localization and Mapping using Ultra Wide-Band (UWB)</strong> - Freelance Project (Mar 2024 - May 2024) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>An Omni-wheel mobile robot can create a map of gas leakage intensities. This robot utilizes three gas sensors and uses the sensor data with
+a neural network to classify the gas into three classes: butane, alcohol, and gasoline. The robot needs a precise localization system to create
+a stunning and accurate map. A trilateration-based localization was used since the robot’s working area is in a warehouse, categorized as an
+indoor environment. The trilateration employed ultra-wide-band technology. There were four UWB devices. The first UWB is placed in the
+robot and works as a tag. The others were placed in a particular position and formed a triangle with certain distances.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Human Following Robot using Optimized Adaptive Social Force Model</strong> - Master Student (Jan 2021 - Jul 2023) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>A differential drive mobile robot that capable to follows certain person by detect and track the position of the human legs position. Human
+legs were detected using a deep learning model, and tracked using kalman filter. Adaptive Social Force Model were utilized as the navigation
+control, which has been optimized using Genetic Algorithm. The optimization process was done in simulation using CoppeliaSim.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Leg Detection using Lidar 2D</strong> - Student Exchange at TUT (Oct 2022 - Nov 2022) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>A tool for detect, track, and associate persons around a robot, to help the navigation processes of the robot. The scanned data from the lidar
+sensor were plotted into 2d map. from the 2d map, a SSD MobilenetV3 was utilized to detect the object that recognized as human legs.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Distributed Image Stitching using MPI</strong> - Master Student (Aug 2022 - Dec 2022) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>This is part of High Performance Computing course’s tasks. The goal of this project is to improve the time process of image stitching by
+distribute the work loads to several nodes. In this work, to distribute the work loads, we implemented MPI.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Cheating Detection System</strong> - Self Freelance (Jan 2022 - Mar 2022) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>An application that provide cheating detection for monitoring the process of test. To recognize wether the person is cheating or not, the system
+used Yolov3 to detect the person’s hands. We defined the working area of the person, if the detected hands went out from the defined frame,
+the system mark it as a cheating. MTCNN architecture also utilized to get facial feature to determine the person’s gaze.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Mask Detection on Attendance System</strong> - Self Freelance (Aug 2021 - Oct 2021) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>An application that provide attendance system that also make sure if the attending person using mask due to covid19. This system utilize
+Local Binary Pattern Histogram (LBPH) for the face detection. To recognize the person identity, VGGNet16 was utilized. And for the mask
+detection, Yolov5 was utilized. MySQL was used as the database to record the user attendance data. All the system was implemented in a
+Raspberry Pi 4.</p></li><li class="transition-transform transform hover:scale-105" data-v-a9128975><strong class="text-yellow-200" data-v-a9128975>Event Detection using Acoustic Sensor</strong> - Self Freelance (Aug 2020 - Oct 2020) <p class="text-sm text-yellow-100 mt-1" data-v-a9128975>A monitoring device that utilize microphone as the main sensor. The microphone is recording the sound around it, the do the feature extraction
+into the spectrogram form. In the spectrogram form, a Convolutional Neural Network were utilized to able recognize the recorded event.
+MySQL were used as the database to record the user attendance data, and laravel were used as the backend server. As the user interface, an
+android application was built.</p></li><!--]--></ul></section><footer class="text-center py-10 px-4" data-v-a9128975><p class="text-lg md:text-xl text-yellow-300" data-v-a9128975>Connect with me on <a href="https://linkedin.com/in/alif-wicaksana" class="text-yellow-100 hover:underline" data-v-a9128975>LinkedIn</a> | © 2024 Alif Wicaksana Ramadhan</p></footer></div><!--]--></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/_payload.json?27c4e1b6-4c52-4868-857c-9d48a27639d2">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{},true,"/",1733194172579]</script>
+<script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"27c4e1b6-4c52-4868-857c-9d48a27639d2",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
